@@ -1,23 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-	<channel>
-		<title>Twnsnd Co.</title>
-		<description>Insouciant describes me well.</description>		
-		<link>http://twnsnd.co</link>
-		<atom:link href="http://twnsnd.co/feed.xml" rel="self" type="application/rss+xml" />
-		
-			<item>
-				<title>Two Dribbble Invites</title>
-				<description>&lt;p&gt;Two invites up for&amp;nbsp;grabs!&lt;/p&gt;
-</description>
-				<pubDate>Sat, 21 Jun 2014 20:42:53 -0400</pubDate>
-				<link>http://twnsnd.co/links/two-dribbble-invites</link>
-				<guid isPermaLink="true">http://twnsnd.co/links/two-dribbble-invites</guid>
-			</item>
-		
-			<item>
-				<title>TheNews</title>
-				<description>&lt;p&gt;TheNews is a website and app that combines Hacker and Designer News. It&amp;#8217;s simple to quickly browse both, checking on the latest links, resources, and updates in the tech and web&amp;nbsp;community.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Twnsnd Co.</title><description>Insouciant describes me well.</description><link>http://twnsnd.co</link><atom:link href="http://twnsnd.co/feed.xml" rel="self" type="application/rss+xml"/><item><title>Two Dribbble Invites</title><description>&lt;p&gt;Two invites up for&amp;nbsp;grabs!&lt;/p&gt;
+</description><pubDate>Sat, 21 Jun 2014 20:42:53 -0400</pubDate><link>http://twnsnd.co/links/two-dribbble-invites</link><guid isPermaLink="true">http://twnsnd.co/links/two-dribbble-invites</guid></item><item><title>TheNews</title><description>&lt;p&gt;TheNews is a website and app that combines Hacker and Designer News. It&amp;#8217;s simple to quickly browse both, checking on the latest links, resources, and updates in the tech and web&amp;nbsp;community.&lt;/p&gt;
 
 &lt;h2&gt;Now for&amp;nbsp;i&lt;span class=&quot;caps&quot;&gt;OS&lt;/span&gt;&lt;/h2&gt;
 
@@ -74,15 +56,7 @@
 
 
 
-</description>
-				<pubDate>Thu, 12 Jun 2014 16:53:04 -0400</pubDate>
-				<link>http://twnsnd.co/work/thenews</link>
-				<guid isPermaLink="true">http://twnsnd.co/work/thenews</guid>
-			</item>
-		
-			<item>
-				<title>Purple Valley Coffee Club</title>
-				<description>&lt;p&gt;&lt;a href=&quot;http://pvcc.twnsnd.co&quot;&gt;Purple Valley Coffee&lt;/a&gt; is a school club I started to expose students, both familiar and unfamiliar to coffee and brewing, to new methods of production, different styles of beans, and some basic chemistry related to production. Students will learn how to make their own coffe, and will no longer rely on&amp;nbsp;cafes.&lt;/p&gt;
+</description><pubDate>Thu, 12 Jun 2014 16:53:04 -0400</pubDate><link>http://twnsnd.co/work/thenews</link><guid isPermaLink="true">http://twnsnd.co/work/thenews</guid></item><item><title>Purple Valley Coffee Club</title><description>&lt;p&gt;&lt;a href=&quot;http://pvcc.twnsnd.co&quot;&gt;Purple Valley Coffee&lt;/a&gt; is a school club I started to expose students, both familiar and unfamiliar to coffee and brewing, to new methods of production, different styles of beans, and some basic chemistry related to production. Students will learn how to make their own coffe, and will no longer rely on&amp;nbsp;cafes.&lt;/p&gt;
 
 &lt;p&gt;I created this microsite as a way of organizing member sign up so I can update the constitution to reflect the current members as well as apply to Williams College Council for the appropriate ammount of&amp;nbsp;funding.&lt;/p&gt;
 
@@ -119,15 +93,7 @@
 
 &lt;/div&gt;
 
-</description>
-				<pubDate>Thu, 29 May 2014 15:10:14 -0400</pubDate>
-				<link>http://twnsnd.co/work/purple-valley-coffee-club</link>
-				<guid isPermaLink="true">http://twnsnd.co/work/purple-valley-coffee-club</guid>
-			</item>
-		
-			<item>
-				<title>Portfolio of Tosin Afolabi</title>
-				<description>&lt;p&gt;This portfolio site is for a friend with whom I work. He wanted something that was unique, a bit edgier than the traditional site for a developer. I created several different color palettes as well as a motion prototype in &lt;em&gt;Adobe Edge Effects&lt;/em&gt; to flesh out timing and give him an idea of how his site would&amp;nbsp;feel.&lt;/p&gt;
+</description><pubDate>Thu, 29 May 2014 15:10:14 -0400</pubDate><link>http://twnsnd.co/work/purple-valley-coffee-club</link><guid isPermaLink="true">http://twnsnd.co/work/purple-valley-coffee-club</guid></item><item><title>Portfolio of Tosin Afolabi</title><description>&lt;p&gt;This portfolio site is for a friend with whom I work. He wanted something that was unique, a bit edgier than the traditional site for a developer. I created several different color palettes as well as a motion prototype in &lt;em&gt;Adobe Edge Effects&lt;/em&gt; to flesh out timing and give him an idea of how his site would&amp;nbsp;feel.&lt;/p&gt;
 
 &lt;div&gt;
 
@@ -156,15 +122,7 @@
 
 &lt;/div&gt;
 
-</description>
-				<pubDate>Fri, 11 Apr 2014 14:59:54 -0400</pubDate>
-				<link>http://twnsnd.co/work/tosin-af</link>
-				<guid isPermaLink="true">http://twnsnd.co/work/tosin-af</guid>
-			</item>
-		
-			<item>
-				<title>Meeet</title>
-				<description>&lt;p&gt;Side projects are gaining popularity in the web community. Volunteered to bulk up your résumé? Open source projects are volunteering in the web community. And they make a difference both seen and unseen. They&amp;#8217;re launching careers. They&amp;#8217;re expanding beyond mere side projects for some. Chances are that you have heard of Animate.css (Dan Eden). Perhaps you haven’t heard of Jake Kelly, but I’m sure you’re familiar with one of his projects: Behave.js, Snap.js, or Mention.js. You may have read Typoguide by Benedikt Lehnert, or used Anchor&lt;span class=&quot;caps&quot;&gt;CMS&lt;/span&gt; developed by Visual&amp;nbsp;Idiot.&lt;/p&gt;
+</description><pubDate>Fri, 11 Apr 2014 14:59:54 -0400</pubDate><link>http://twnsnd.co/work/tosin-af</link><guid isPermaLink="true">http://twnsnd.co/work/tosin-af</guid></item><item><title>Meeet</title><description>&lt;p&gt;Side projects are gaining popularity in the web community. Volunteered to bulk up your résumé? Open source projects are volunteering in the web community. And they make a difference both seen and unseen. They&amp;#8217;re launching careers. They&amp;#8217;re expanding beyond mere side projects for some. Chances are that you have heard of Animate.css (Dan Eden). Perhaps you haven’t heard of Jake Kelly, but I’m sure you’re familiar with one of his projects: Behave.js, Snap.js, or Mention.js. You may have read Typoguide by Benedikt Lehnert, or used Anchor&lt;span class=&quot;caps&quot;&gt;CMS&lt;/span&gt; developed by Visual&amp;nbsp;Idiot.&lt;/p&gt;
 
 &lt;p&gt;Sometimes these projects were small enough for one, but often there is a second pair of eyes and hands, a second mind, helping implement. Finding the right person to fill this role is often difficult. You can’t always find a perfect match for skills. your mentions on Twitter fell on silent ears. Designer News lacked a response. There’s &lt;a href=&quot;http://programmermeetdesigner.com/&quot;&gt;Programmer Meet Designer&lt;/a&gt;, but everyone there is looking for a long term partner. It’s centered around money and location. It’s too much&amp;nbsp;commitment.&lt;/p&gt;
 
@@ -175,15 +133,7 @@
 &lt;p&gt;You can check out the site and sign up for updates: &lt;a href=&quot;http://meeet.co&quot;&gt;Meeet Co&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;We’d love to hear from you at us@meeet.co, or on Twitter &lt;a href=&quot;http://twitter.com/meeetco&quot;&gt;@meeetco&lt;/a&gt;.&lt;/p&gt;
-</description>
-				<pubDate>Wed, 26 Mar 2014 16:28:42 -0400</pubDate>
-				<link>http://twnsnd.co/work/meeet</link>
-				<guid isPermaLink="true">http://twnsnd.co/work/meeet</guid>
-			</item>
-		
-			<item>
-				<title>Goodrich Coffee</title>
-				<description>&lt;p&gt;At Williams College, I worked with Goodrich Coffee Bar. I developed their identity through several poster campaigns. With custom illustrations and cheeky copywriting I helped develop their brand voice. I used the typeface &lt;em&gt;Soleil&lt;/em&gt;, available on&amp;nbsp;Typekit.&lt;/p&gt;
+</description><pubDate>Wed, 26 Mar 2014 16:28:42 -0400</pubDate><link>http://twnsnd.co/work/meeet</link><guid isPermaLink="true">http://twnsnd.co/work/meeet</guid></item><item><title>Goodrich Coffee</title><description>&lt;p&gt;At Williams College, I worked with Goodrich Coffee Bar. I developed their identity through several poster campaigns. With custom illustrations and cheeky copywriting I helped develop their brand voice. I used the typeface &lt;em&gt;Soleil&lt;/em&gt;, available on&amp;nbsp;Typekit.&lt;/p&gt;
 
 &lt;h6&gt;Fall&amp;nbsp;Campaign&lt;/h6&gt;
 
@@ -245,15 +195,7 @@
 
 &lt;/div&gt;
 
-</description>
-				<pubDate>Tue, 25 Mar 2014 19:41:57 -0400</pubDate>
-				<link>http://twnsnd.co/work/goodrich-coffee</link>
-				<guid isPermaLink="true">http://twnsnd.co/work/goodrich-coffee</guid>
-			</item>
-		
-			<item>
-				<title>Balzac Theme</title>
-				<description>&lt;h2&gt;For&amp;nbsp;Anchor&lt;/h2&gt;
+</description><pubDate>Tue, 25 Mar 2014 19:41:57 -0400</pubDate><link>http://twnsnd.co/work/goodrich-coffee</link><guid isPermaLink="true">http://twnsnd.co/work/goodrich-coffee</guid></item><item><title>Balzac Theme</title><description>&lt;h2&gt;For&amp;nbsp;Anchor&lt;/h2&gt;
 
 &lt;p&gt;Creating this theme in Anchor was relatively easy. I used similar php templates to those for my own website, and merely had to style the front end. I used Semantic.gs, a simple grid _include for Sass projects, and made it percentage based. The result was a fluid grid with min and max widths. I based the entire format on my favorite blogs and content heavy websites, and used the amazing &lt;a href=&quot;http://www.calendasplus.com/&quot;&gt;Calendas Plus&lt;/a&gt;&amp;nbsp;font.
 &lt;a href=&quot;http://gtat.me/balzac&quot; target=&quot;_blank&quot;&gt;Demo&lt;/a&gt;&lt;/p&gt;
@@ -285,15 +227,7 @@
 
 &lt;/div&gt;
 
-</description>
-				<pubDate>Wed, 19 Mar 2014 13:27:15 -0400</pubDate>
-				<link>http://twnsnd.co/work/balzac-theme</link>
-				<guid isPermaLink="true">http://twnsnd.co/work/balzac-theme</guid>
-			</item>
-		
-			<item>
-				<title>Typistry</title>
-				<description>&lt;p&gt;Typistry is a single column, reading-centric theme for Tumblr. I wanted to create an environment around the blog post, to coddle long form for a great reading experience. The end result was a theme that looked similar to what one might see on a kindle, on the &lt;span class=&quot;caps&quot;&gt;NYT&lt;/span&gt; redesign, or on A List&amp;nbsp;Apart.&lt;/p&gt;
+</description><pubDate>Wed, 19 Mar 2014 13:27:15 -0400</pubDate><link>http://twnsnd.co/work/balzac-theme</link><guid isPermaLink="true">http://twnsnd.co/work/balzac-theme</guid></item><item><title>Typistry</title><description>&lt;p&gt;Typistry is a single column, reading-centric theme for Tumblr. I wanted to create an environment around the blog post, to coddle long form for a great reading experience. The end result was a theme that looked similar to what one might see on a kindle, on the &lt;span class=&quot;caps&quot;&gt;NYT&lt;/span&gt; redesign, or on A List&amp;nbsp;Apart.&lt;/p&gt;
 
 &lt;p&gt;&lt;a class=&quot;strip-style&quot; href=&quot;http://gum.co/yMIA&quot; class=&quot;gumroad-button&quot;&gt;Buy on Gumroad&lt;/a&gt;&lt;script type=&quot;text/javascript&quot; src=&quot;https://gumroad.com/js/gumroad.js&quot;&gt;&lt;/script&gt;&lt;/p&gt;
 
@@ -308,15 +242,7 @@
 &lt;p&gt;I utilized &lt;span class=&quot;caps&quot;&gt;SCSS&lt;/span&gt; to style the theme. It was incredible how quickly and easily I could make vast style changes to the blog. Using @mixins was both faster for coding and better for visual consistency. As I made this theme responsive, as opposed to fluid, I changed elements as needed, which lead to less code. I ended up with cleaner &lt;span class=&quot;caps&quot;&gt;CSS&lt;/span&gt;, and ultimately fewer changes to the formatting of the blog. Visually, it is consistent and it scales down gracefully to&amp;nbsp;smartphone.&lt;/p&gt;
 
 &lt;p&gt;&lt;a href=&quot;http://thetypistry.tumblr.com/&quot;&gt;You can get a feel for Typistry here&lt;/a&gt;.&lt;/p&gt;
-</description>
-				<pubDate>Thu, 27 Feb 2014 12:06:34 -0500</pubDate>
-				<link>http://twnsnd.co/work/typistry</link>
-				<guid isPermaLink="true">http://twnsnd.co/work/typistry</guid>
-			</item>
-		
-			<item>
-				<title>The Best Resources for Sketch</title>
-				<description>&lt;p&gt;&lt;a href=&quot;http://www.bohemiancoding.com/sketch/&quot; target=&quot;_blank&quot;&gt;Sketch App&lt;/a&gt; by Bohemian Coding is &lt;em&gt;the app&lt;/em&gt; for designing websites and interfaces. It&amp;#8217;s built for &lt;span class=&quot;caps&quot;&gt;UI&lt;/span&gt; work. It exclusively uses vectors. The interface is simple and intuitive. It can run off a thumb drive and the program is smaller than the average&amp;nbsp;&lt;span class=&quot;caps&quot;&gt;PSD.&lt;/span&gt;&lt;/p&gt;
+</description><pubDate>Thu, 27 Feb 2014 12:06:34 -0500</pubDate><link>http://twnsnd.co/work/typistry</link><guid isPermaLink="true">http://twnsnd.co/work/typistry</guid></item><item><title>The Best Resources for Sketch</title><description>&lt;p&gt;&lt;a href=&quot;http://www.bohemiancoding.com/sketch/&quot; target=&quot;_blank&quot;&gt;Sketch App&lt;/a&gt; by Bohemian Coding is &lt;em&gt;the app&lt;/em&gt; for designing websites and interfaces. It&amp;#8217;s built for &lt;span class=&quot;caps&quot;&gt;UI&lt;/span&gt; work. It exclusively uses vectors. The interface is simple and intuitive. It can run off a thumb drive and the program is smaller than the average&amp;nbsp;&lt;span class=&quot;caps&quot;&gt;PSD.&lt;/span&gt;&lt;/p&gt;
 
 &lt;p&gt;One area where Sketch lacks is resources. There are so many Photoshop plugins, grids, brushes, and templates. As the industry standard I would expect there to be more for Photoshop, just as Windows runs more games than Mac. That&amp;#8217;s just how it&amp;nbsp;is.&lt;/p&gt;
 
@@ -357,15 +283,7 @@
 &lt;li&gt;&lt;a href=&quot;http://www.pinterest.com/sketchsources/resources/&quot;&gt;Pinned&amp;nbsp;Resources&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-</description>
-				<pubDate>Thu, 27 Feb 2014 12:06:34 -0500</pubDate>
-				<link>http://twnsnd.co/journal/sketch-app</link>
-				<guid isPermaLink="true">http://twnsnd.co/journal/sketch-app</guid>
-			</item>
-		
-			<item>
-				<title>A Quick Guide to Anchor CMS</title>
-				<description>&lt;p&gt;Below is a condensed version of the install instructions available at &lt;a href=&quot;http://anchorcms.com/docs/getting-started/installing&quot;&gt;Anchor &lt;span class=&quot;caps&quot;&gt;CMS&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
+</description><pubDate>Thu, 27 Feb 2014 12:06:34 -0500</pubDate><link>http://twnsnd.co/journal/sketch-app</link><guid isPermaLink="true">http://twnsnd.co/journal/sketch-app</guid></item><item><title>A Quick Guide to Anchor CMS</title><description>&lt;p&gt;Below is a condensed version of the install instructions available at &lt;a href=&quot;http://anchorcms.com/docs/getting-started/installing&quot;&gt;Anchor &lt;span class=&quot;caps&quot;&gt;CMS&lt;/span&gt;&lt;/a&gt;.&lt;/p&gt;
 
 &lt;ul&gt;
 &lt;li&gt;Before installing, make sure your platform has the required components to run&amp;nbsp;Anchor.&lt;/li&gt;
@@ -390,11 +308,4 @@
 &lt;li&gt;&lt;a href=&quot;http://gtat.me/balzac&quot;&gt;Balzac, a theme for&amp;nbsp;Anchor&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
-</description>
-				<pubDate>Thu, 27 Feb 2014 12:06:34 -0500</pubDate>
-				<link>http://twnsnd.co/journal/quick-guide-to-anchor-cms</link>
-				<guid isPermaLink="true">http://twnsnd.co/journal/quick-guide-to-anchor-cms</guid>
-			</item>
-		
-	</channel>
-</rss>
+</description><pubDate>Thu, 27 Feb 2014 12:06:34 -0500</pubDate><link>http://twnsnd.co/journal/quick-guide-to-anchor-cms</link><guid isPermaLink="true">http://twnsnd.co/journal/quick-guide-to-anchor-cms</guid></item></channel></rss>
