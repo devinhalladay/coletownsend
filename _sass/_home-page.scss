@@ -40,6 +40,8 @@ section[class*="block-"] {
     @extend %h3;
     line-height: 1.5;
     padding: 0 3rem;
+    word-wrap: break-word;
+    word-break: break-word;
     @include media($small) {
       font-size: $fs6;
       line-height: 1.5;

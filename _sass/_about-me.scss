@@ -158,6 +158,15 @@
   color: $green;
 }
 
+.orange-marker {
+  @extend .red-marker;
+  background: $orange;
+}
+
+.orange-marker + .work-status {
+  color: $orange;
+}
+
 
 
 .buffalo-full {

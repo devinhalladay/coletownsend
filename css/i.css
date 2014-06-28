@@ -1661,7 +1661,9 @@ section[class*="block-"] {
   .block-1 p {
     color: #4a4c52;
     line-height: 1.5;
-    padding: 0 3rem; }
+    padding: 0 3rem;
+    word-wrap: break-word;
+    word-break: break-word; }
     @media screen and (max-width: 640px) {
       .block-1 p {
         font-size: 1em;
@@ -2496,7 +2498,7 @@ footer {
     .about .profile-links small {
       display: inline-block; }
 
-.red-marker, .green-marker {
+.red-marker, .green-marker, .orange-marker {
   width: .25em;
   height: .25em;
   display: inline-block;
@@ -2505,7 +2507,7 @@ footer {
   position: relative;
   top: -.1em; }
 
-.red-marker + .work-status, .green-marker + .work-status {
+.red-marker + .work-status, .green-marker + .work-status, .orange-marker + .work-status {
   color: #ec6f66; }
 
 .green-marker {
@@ -2513,6 +2515,12 @@ footer {
 
 .green-marker + .work-status {
   color: #14b250; }
+
+.orange-marker {
+  background: #f4ab88; }
+
+.orange-marker + .work-status {
+  color: #f4ab88; }
 
 .buffalo-full {
   -webkit-user-select: none;
