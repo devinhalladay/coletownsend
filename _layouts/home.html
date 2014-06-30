@@ -20,7 +20,7 @@
     <section id="work" class="block-2">
       <article class="full">
         <ul>
-        {% for post in site.posts limit:9 %}
+        {% for post in site.posts limit: 9 %}
           {% if post.categories contains 'work' %}
               {% if post.image.feature %}
                 <li class="work-grid">
