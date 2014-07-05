@@ -2186,9 +2186,7 @@ p a::before {
   margin-top: 0px;
   width: 100%;
   height: 100%;
-  background-color: #ec6f66;
-  background-image: -webkit-linear-gradient(-405deg, #ec6f66 20%, #f4ab88 100%);
-  background-image: linear-gradient(135deg,#ec6f66 20%, #f4ab88 100%);
+  background: #ec6f66;
   color: white;
   border-radius: 2px;
   content: '';

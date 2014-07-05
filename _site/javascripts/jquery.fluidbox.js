@@ -1,6 +1,6 @@
 // Fluidbox
 // Description: Replicating the seamless lightbox transition effect seen on Medium.com, with some improvements
-// Version: 1.3.0
+// Version: 1.3.3
 // Author: Terry Mun
 // Author URI: http://terrymun.com
 
@@ -44,8 +44,8 @@
 
     // Default settings
     var settings = $.extend(true, {
-      viewportFill: .96,
-      overlayColor: 'rgba(35,40,48,.85)',
+      viewportFill: 0.98,
+      overlayColor: 'rgba(0,0,0,.85)',
       debounceResize: true,
       stackIndex: 1000,
       stackIndexDelta: 10,
@@ -92,6 +92,7 @@
         // Get shorthand for more objects
         var $img    = $activeFb.find('img'),
           $ghost  = $activeFb.find('.fluidbox-ghost'),
+          $wrap = $activeFb.find('.fluidbox-wrap'),
 
           // Calculation goes here
           offsetY = $w.scrollTop()-$img.offset().top+0.5*($img.data('imgHeight')*($img.data('imgScale')-1))+0.5*($w.height()-$img.data('imgHeight')*$img.data('imgScale')),
@@ -102,7 +103,9 @@
         // For offsetX and Y, we round to one decimal place
         // For scale, we round to three decimal places
         $ghost.css({
-          'transform': 'translate('+parseInt(offsetX*10)/10+'px,'+parseInt(offsetY*10)/10+'px) scale('+parseInt(scale*1000)/1000+')'
+          'transform': 'translate('+parseInt(offsetX*10)/10+'px,'+parseInt(offsetY*10)/10+'px) scale('+parseInt(scale*1000)/1000+')',
+          top: $img.offset().top - $wrap.offset().top,
+          left: $img.offset().left - $wrap.offset().left
         });
       },
       funcCalcAll = function() {
@@ -121,25 +124,32 @@
             $wrap = $fbItem.find('.fluidbox-wrap'),
             data  = $img.data();
 
-          // Store image dimensions in jQuery object
-          data.imgWidth = $img.width();
-          data.imgHeight  = $img.height();
-          data.imgRatio = $img.width()/$img.height();
+          function imageProp() {
+            // Store image dimensions in jQuery object
+            data.imgWidth = $img.width();
+            data.imgHeight  = $img.height();
+            data.imgRatio = $img.width()/$img.height();
 
-          // Resize and position ghost element
-          $ghost.css({
-            width: $img.width(),
-            height: $img.height(),
-            top: $img.offset().top - $wrap.offset().top,
-            left: $img.offset().left - $wrap.offset().left,
-          });
+            // Resize and position ghost element
+            $ghost.css({
+              width: $img.width(),
+              height: $img.height(),
+              top: $img.offset().top - $wrap.offset().top + parseInt($img.css('borderTopWidth')) + parseInt($img.css('paddingTop')),
+              left: $img.offset().left - $wrap.offset().left + parseInt($img.css('borderLeftWidth')) + parseInt($img.css('paddingLeft'))
+            });
 
-          // Calculate scale based on orientation
-          if(vpRatio > data.imgRatio) {
-            data.imgScale = $w.height()*settings.viewportFill/$img.height();
-          } else {
-            data.imgScale = $w.width()*settings.viewportFill/$img.width();
+            // Calculate scale based on orientation
+            if(vpRatio > data.imgRatio) {
+              data.imgScale = $w.height()*settings.viewportFill/$img.height();
+            } else {
+              data.imgScale = $w.width()*settings.viewportFill/$img.width();
+            }           
           }
+
+          imageProp();          
+
+          // Rerun everything on imageload, to overcome issue in Firefox
+          $img.load(imageProp);
         }
       },
       fbClickHandler = function(e) {
@@ -175,7 +185,6 @@
 
               // Force timer to completion
               if(timer['close']) window.clearTimeout(timer['close']);
-              if(timer['hideGhost']) window.clearTimeout(timer['hideGhost']);
 
               // Set timer for opening
               timer['open'] = window.setTimeout(function() {
@@ -184,14 +193,12 @@
               }, 10);
 
               // Change wrapper z-index, so it is above everything else
+              // Decrease all siblings z-index by 1 just in case
+              $('.fluidbox-wrap').css({ zIndex: settings.stackIndex - settings.stackIndexDelta - 1 });
               $wrap.css({ 'z-index': settings.stackIndex + settings.stackIndexDelta });
 
               // Set thumbnail image source as background image first, preload later
-              // Sometimes the transitionend is not unbound properly, especially when very quick, successive clicking.
-              // We turn it off again, just in case.
-              $ghost
-              .off('webkitTransitionEnd transitionend oTransitionEnd MSTransitionEnd transitionEnd')
-              .css({
+              $ghost.css({
                 'background-image': 'url('+$img.attr('src')+')',
                 opacity: 1
               });
@@ -200,11 +207,11 @@
               $img.css({ opacity: 0 });
 
               // Preload ghost image
-              var ghostImg = new Image();
-              ghostImg.onload = function (){
+              $('<img />', {
+                src: $activeFb.attr('href')
+              }).load(function() {
                 $ghost.css({ 'background-image': 'url('+$activeFb.attr('href')+')' });
-              };
-              ghostImg.src = $activeFb.attr('href');
+              });
 
               // Position Fluidbox
               funcPositionFb($activeFb);
@@ -232,12 +239,13 @@
 
             // Reverse animation on wrapped elements, and restore stacking order
             // You might want to change this value if your transition timing is longer
-            $ghost.css({ 'transform': 'translate(0,0) scale(1)' }).one('webkitTransitionEnd transitionend oTransitionEnd MSTransitionEnd transitionEnd', function (){
-              $img.css({ opacity: 1 });
-              timer['hideGhost'] = window.setTimeout(function() {
-                $ghost.css({ opacity: 0 });
-              }, 250);
+            $ghost.css({
+              'transform': 'translate(0,0) scale(1)',
+              opacity: 0,
+              top: $img.offset().top - $wrap.offset().top + parseInt($img.css('borderTopWidth')) + parseInt($img.css('paddingTop')),
+              left: $img.offset().left - $wrap.offset().left + parseInt($img.css('borderLeftWidth')) + parseInt($img.css('paddingLeft'))
             });
+            $img.css({ opacity: 1 });
           }
 
           e.preventDefault();
@@ -311,7 +319,7 @@
                 $fbItem.click(fbClickHandler);
               });
             }
-          });
+        });
 
       }
     });

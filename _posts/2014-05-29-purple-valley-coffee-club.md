@@ -17,9 +17,7 @@ image:
 
 I created this microsite as a way of organizing member sign up so I can update the constitution to reflect the current members as well as apply to Williams College Council for the appropriate ammount of funding.
 
-It also serves as a base for information to increase transparency and drive membership and a place to document the experiences of the group. 
-
-_This site is only accessible on Williams College wifi as it has student names. Better safe than sorry._
+It also serves as a base for information to increase transparency and drive membership and a place to document the experiences of the group.
 
 
 ###### Details
