@@ -12,4 +12,4 @@ image:
   feature: 
 ---
 
-Two invites up for grabs!
+<del>Two invites up for grabs!</del> Gone now!
