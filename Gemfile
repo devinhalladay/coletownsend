@@ -13,3 +13,5 @@ gem 'reduce'
 gem 'json'
 gem 'nokogiri'
 gem 'fileutils'
+
+gem 'typogruby'
