@@ -11,7 +11,7 @@ var EXPRESS_ROOT = '_site/'
  
 // Run Jekyll Build Asynchronously
 gulp.task('jekyll-dev', function () {
-    var jekyll = spawn('jekyll', 'build', '--config', ' _config.yml,', '_development_config.yml');
+    var jekyll = spawn('jekyll', 'build', '--config', ' _config.yml', '_development_config.yml');
  
     jekyll.on('exit', function (code) {
         console.log('-- Finished Jekyll Build --')
@@ -48,7 +48,7 @@ gulp.task('watch', function () {
     var lr = livereload();
  
     // Manually compile and inject css to avoid jekyll overhead, and utilize livereload injection
-    gulp.watch('_scss/*.scss', ['sass:dev']);
+    gulp.watch('_sass/*.scss', ['sass:dev']);
     
     // Watch for changes to other files for jekyll compilation
     // Note: This will probably need to be updated with the files you want to watch
