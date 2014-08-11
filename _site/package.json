@@ -1,17 +1,11 @@
 {
-  "name": "Cole Townsend's Portfolio",
+  "name": "ct-porfolio",
   "version": "0.0.1",
-  "description": "A development environment for jekyll and gulp",
-  "author": "Jesse Shawl http://jesse.sh/awl/",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/jshawl/jekyll-gulp.git"
-  },
   "devDependencies": {
-    "gulp": "latest",
-    "express": "latest",
-    "gulp-sass": "latest",
-    "child_process": "latest",
-    "gulp-livereload": "latest"
+    "gulp": "~",
+    "express": "~",
+    "gulp-sass": "~",
+    "exec": "~",
+    "gulp-livereload": "~"
   }
 }

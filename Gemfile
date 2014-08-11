@@ -4,7 +4,6 @@ gem 'bundler'
 gem 'jekyll'
 
 gem 'rake'
-gem 'foreman'
 
 gem 'sass'
 gem 'bourbon'
