@@ -1,3 +1,12 @@
+##################################################
+# Require gems.
+##################################################
+require "yaml"
+require "fileutils"
+require "tmpdir"
+require "rubygems"
+require "bundler/setup"
+require "jekyll"
 require "rubygems"
 require 'rake'
 
