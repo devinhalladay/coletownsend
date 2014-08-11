@@ -1,0 +1,11 @@
+{
+  "name": "ct-porfolio",
+  "version": "0.0.1",
+  "devDependencies": {
+    "gulp": "~",
+    "express": "~",
+    "gulp-sass": "~",
+    "exec": "~",
+    "gulp-livereload": "~"
+  }
+}

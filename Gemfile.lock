@@ -2,7 +2,6 @@ GEM
   remote: https://rubygems.org/
   specs:
     blankslate (2.1.2.4)
-    blockenspiel (0.4.5)
     bourbon (3.1.8)
       sass (>= 3.2.0)
       thor
@@ -70,8 +69,6 @@ GEM
     thor (0.19.1)
     toml (0.1.1)
       parslet (~> 1.5.0)
-    versionomy (0.4.4)
-      blockenspiel (>= 0.4.5)
     yajl-ruby (1.1.0)
 
 PLATFORMS
@@ -79,6 +76,7 @@ PLATFORMS
 
 DEPENDENCIES
   bourbon
+  bundler
   fileutils
   foreman
   jekyll
@@ -88,4 +86,3 @@ DEPENDENCIES
   rake
   reduce
   sass
-  versionomy

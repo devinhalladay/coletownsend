@@ -12,6 +12,7 @@ future: true
 images_url: /images/inline/
 image:
   source: images/inline
+
 # dribbble
 dribbble_set:
   user:            'coletownsend'
@@ -23,15 +24,11 @@ dribbble_set:
   a_target:        '_blank'
   full_size:       false
 
-# glynn
-ftp_host: 'ftp.coletownsend.com'
-ftp_dir: '../beta-site'
-ftp_passive: false
 
 
 # A list of directories (including trailing slash) and files to exclude from the conversion
 # ============================================================
-exclude: ['README.md', 'Procfile', 'Rakefile', '*.codekit', 'Gemfile.lock', 'Gemfile', '.gitignore', 'templates', '*.sublime-workspace', '*.sublime-project', '_config.yml', '*.scssc']
+exclude: ['README.md', 'node_modules', 'Procfile', 'Rakefile', '*.codekit', 'Gemfile.lock', 'Gemfile', '.gitignore', 'templates', '*.sublime-workspace', '*.sublime-project', '_config.yml', '*.scssc']
 include:  ['.htaccess']
 
 timezone:    America/New_York

@@ -1,15 +1,15 @@
-@import "variables";
-@import "mixins";
-@import "normalize";
+@import "_variables";
+@import "_mixins";
+@import "_normalize";
 
-@import "bourbon/bourbon"; 
-@import "animations";
-@import "grid-settings";
+@import "_bourbon/bourbon"; 
+@import "_animations";
+@import "_grid-settings";
 @import "neat/neat";
-@import "type";
-@import "styles";
-@import "fluidbox";
-@import "instantclick";
+@import "_type";
+@import "_styles";
+@import "_fluidbox";
+@import "_instantclick";
 
 // @import "responsive-nav";
 

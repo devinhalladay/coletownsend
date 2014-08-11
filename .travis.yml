@@ -1,0 +1,32 @@
+language: ruby
+cache:
+  bundler: true
+rvm:
+- 2.0.0-p451
+branches:
+  only:
+  - master
+bundler_args: --without development --path=~/.bundle
+before_install:
+- 'echo ''gem: --no-ri --no-rdoc'' > ~/.gemrc'
+- gem install bundler
+- bundle config build.nokogiri --use-system-libraries
+- gem install nokogiri -- --use-system-libraries
+- gem install bundle_cache
+- bundle_cache_install
+before_script:
+  -in id_rsa.enc -out id_rsa -d
+- echo -e "Host 162.243.103.246\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+- chmod 600 id_rsa
+- ssh-add id_rsa
+script:
+- git config --global user.email "cole@coletownsend.com"
+- git config --global user.name "Cole Townsend"
+- bundle exec rake deploy
+after_script:
+- bundle_cache
+source_key:
+env:
+  global:
+  - BUNDLE_ARCHIVE: bundle-archive
+  - AWS_S3_BUCKET: devinhalladay-bundler-cache
