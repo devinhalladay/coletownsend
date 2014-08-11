@@ -78,19 +78,6 @@ figcaption {
   opacity: .5;
 }
 
-p {
-  // margin: 0 0 ($base-line-height * .5);
-  -ms-word-break: break-all;
-      word-break: break-all;
-  
-  /* Non standard for webkit */
-      word-break: break-word;
-
-  -webkit-hyphens: auto;
-     -moz-hyphens: auto;
-          hyphens: auto;
-}
-
 p + p {
   margin-top: $base-line-height;
 }
@@ -193,8 +180,8 @@ span.accent {
 
 // widths
 %post-width {
-  @include span-columns(8 of 12);
-  @include shift(2);
+  @include span-columns(10 of 12);
+  @include shift(1);
   float: none;
   position: relative;
   @include media($small) {
@@ -280,5 +267,9 @@ span.accent {
       font-weight: bold;
       margin-top: 1.5rem;
       letter-spacing: 0.1em;
+    }
+    p {
+      font-size: $fs5;
+      font-family: $serif;
     }
 }

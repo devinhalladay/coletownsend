@@ -1325,15 +1325,6 @@ h6, figcaption, .contact p:first-child, .contact label {
 figcaption {
   opacity: .5; }
 
-p {
-  -ms-word-break: break-all;
-  word-break: break-all;
-  /* Non standard for webkit */
-  word-break: break-word;
-  -webkit-hyphens: auto;
-  -moz-hyphens: auto;
-  hyphens: auto; }
-
 p + p {
   margin-top: 1.5em; }
 
@@ -1411,8 +1402,8 @@ span.accent {
   float: left;
   display: block;
   margin-right: 1.69492%;
-  width: 66.10169%;
-  margin-left: 16.94915%;
+  width: 83.05085%;
+  margin-left: 8.47458%;
   float: none;
   position: relative; }
   .post hr:last-child, .post h1:last-child, .post h2:last-child, .post h3:last-child, .post .block-1 p:last-child, .block-1 .post p:last-child, .post h4:last-child, .post h5:last-child, .post h6:last-child, .post figcaption:last-child, .post .contact p:last-child:first-child, .contact .post p:last-child:first-child, .post .contact label:last-child, .contact .post label:last-child, .post article header:last-child, .post article p:last-child, .post article ul:last-child, .post article ul ol:last-child {
@@ -1456,6 +1447,9 @@ h6, figcaption, .contact p:first-child, .contact label, small, .post h6, .post f
   font-weight: bold;
   margin-top: 1.5rem;
   letter-spacing: 0.1em; }
+.post p {
+  font-size: 1.25em;
+  font-family: "Adobe Garamond Pro", "Georgia", serif; }
 
 * {
   -webkit-box-sizing: border-box;
