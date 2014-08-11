@@ -1,66 +1,66 @@
-var gulp = require('gulp'),
-    express = require('express'),
-    sass = require('gulp-sass'),
-    spawn = require('child_process').spawn,
-    minifycss = require('gulp-minify-css');
-    livereload = require('gulp-livereload');
- 
-var EXPRESS_PORT = 4000;
-var EXPRESS_ROOT = '_site/'
- 
- 
-// Run Jekyll Build Asynchronously
-gulp.task('jekyll-dev', function () {
-    var jekyll = spawn('jekyll', 'build', '--config', ' _config.yml', '_development_config.yml');
- 
-    jekyll.on('exit', function (code) {
-        console.log('-- Finished Jekyll Build --')
-    })
+var gulp        = require('gulp');
+var browserSync = require('browser-sync');
+var sass        = require('gulp-sass');
+var prefix      = require('gulp-autoprefixer');
+var cp          = require('child_process');
+
+var messages = {
+    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
+};
+
+/**
+ * Build the Jekyll Site
+ */
+gulp.task('jekyll-build', function (done) {
+    browserSync.notify(messages.jekyllBuild);
+    return cp.spawn('jekyll', ['build'], {stdio: 'inherit'})
+        .on('close', done);
 });
 
-gulp.task('jekyll-prod', function () {
-    var jekyll = spawn('jekyll', ['build', '--trace']);
- 
-    jekyll.on('exit', function (code) {
-        console.log('-- Finished Jekyll Build --')
-    })
+/**
+ * Rebuild Jekyll & do page reload
+ */
+gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+    browserSync.reload();
 });
- 
- 
-// Compile SASS
-gulp.task('sass', function () {
-    return gulp.src('_sass/*.scss')
-        .pipe(gulp.dest('css'))
-        .pipe(gulp.dest('_site/css')); // Copy to static dir
-});
- 
- 
-// Run static file server
-gulp.task('serve', function () {
-    var server = express();
-    server.use(express.static(EXPRESS_ROOT));
-    server.listen(EXPRESS_PORT);
-});
- 
- 
-// Watch for changes
-gulp.task('watch', function () {
-    var lr = livereload();
- 
-    // Manually compile and inject css to avoid jekyll overhead, and utilize livereload injection
-    gulp.watch('_sass/*.scss', ['sass:dev']);
-    
-    // Watch for changes to other files for jekyll compilation
-    // Note: This will probably need to be updated with the files you want to watch
-    // Second Note: MAKE SURE that the last to items in the watchlist are included or else infinite jekyll loop
-    gulp.watch(['*.html', '*/*.html', '*/*.md', '!_site/**', '!_site/*/**'], ['jekyll']);
- 
-    // When a file in the _site directory changes, tell livereload to reload the page
-    gulp.watch(['_site/*/**']).on('change', function (file) {
-        lr.changed(file.path);
+
+/**
+ * Wait for jekyll-build, then launch the Server
+ */
+gulp.task('browser-sync', ['sass', 'jekyll-build'], function() {
+    browserSync({
+        server: {
+            baseDir: '_site'
+        }
     });
-})
- 
- 
-gulp.task('default', ['sass', 'jekyll-dev', 'serve', 'watch']);
-gulp.task('build', ['sass', 'jekyll-prod', 'serve', 'watch']);
+});
+
+/**
+ * Compile files from _scss into both _site/css (for live injecting) and site (for future jekyll builds)
+ */
+gulp.task('sass', function () {
+    gulp.src('_scss/main.scss')
+        .pipe(sass({
+            includePaths: ['scss'],
+            onError: browserSync.notify
+        }))
+        .pipe(prefix(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], { cascade: true }))
+        .pipe(gulp.dest('_site/css'))
+        .pipe(browserSync.reload({stream:true}))
+        .pipe(gulp.dest('css'));
+});
+
+/**
+ * Watch scss files for changes & recompile
+ * Watch html/md files, run jekyll & reload BrowserSync
+ */
+gulp.task('watch', function () {
+    gulp.watch('_scss/*.scss', ['sass']);
+    gulp.watch(['index.html', '_layouts/*.html', '_posts/*'], ['jekyll-rebuild']);
+});
+
+/**
+ * Default task, running just `gulp` will compile the sass,
+ * compile the jekyll site, launch BrowserSync & watch files.
+ */
+gulp.task('default', ['browser-sync', 'watch']);
