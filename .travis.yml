@@ -19,6 +19,7 @@ before_install:
 before_script:
 - echo -e "Host 69.89.16.246\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
 - chmod 600 coletownsend_rsa
+- eval `ssh-agent -s`
 - ssh-add coletownsend_rsa
 script:
 - git config --global user.email "cole@coletownsend.com"
