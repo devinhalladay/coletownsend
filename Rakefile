@@ -11,8 +11,6 @@ task :default do
   abort "use foreman start to run the project"
 end
 
-require "reduce"
-
 source_dir  = "source"    # source file directory
 public_dir  = "_site"    # compiled site directory
 
@@ -101,6 +99,21 @@ task :ship do
   puts "Pushed latest changes to GitHub!"
   system "glynn"
 end
+
+##################################################
+# Build and watch the site (locally)
+#################################################
+
+desc "Watch and build our Sass."
+task :sass do
+  system "sass --watch _sass:css"
+end
+
+desc "Build and watch the site."
+task :watch do
+  system "jekyll serve --watch --config _config.yml,_development_config.yml"
+end
+
 
 ##################################################
 # Deploy tasks for Travis CI
