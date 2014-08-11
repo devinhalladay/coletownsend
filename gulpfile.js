@@ -9,6 +9,14 @@ var EXPRESS_ROOT = '_site/'
  
  
 // Run Jekyll Build Asynchronously
+gulp.task('jekyll-dev', function () {
+    var jekyll = spawn('jekyll', 'build', '--config _config.yml, _development_config.yml');
+ 
+    jekyll.on('exit', function (code) {
+        console.log('-- Finished Jekyll Build --')
+    })
+});
+
 gulp.task('jekyll', function () {
     var jekyll = spawn('jekyll', ['build']);
  
@@ -21,7 +29,6 @@ gulp.task('jekyll', function () {
 // Compile SASS
 gulp.task('sass', function () {
     return gulp.src('_sass/*.scss')
-        .pipe(sass({'sourceComments': 'map'})) // Turn on source mapping
         .pipe(gulp.dest('css'))
         .pipe(gulp.dest('_site/css')); // Copy to static dir
 });
@@ -54,4 +61,5 @@ gulp.task('watch', function () {
 })
  
  
-gulp.task('default', ['sass', 'jekyll', 'serve', 'watch']);
+gulp.task('default', ['sass', 'jekyll-dev', 'serve', 'watch']);
+gulp.task('build', ['sass', 'jekyll', 'serve', 'watch']);

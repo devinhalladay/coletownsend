@@ -21,7 +21,6 @@ gulp.task('jekyll', function () {
 // Compile SASS
 gulp.task('sass', function () {
     return gulp.src('_sass/*.scss')
-        .pipe(sass({'sourceComments': 'map'})) // Turn on source mapping
         .pipe(gulp.dest('css'))
         .pipe(gulp.dest('_site/css')); // Copy to static dir
 });

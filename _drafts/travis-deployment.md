@@ -2,7 +2,7 @@
 layout: post
 
 title: Travis Deployment
-date: unpublished
+date: 2014-08-11
 category: journal
 accent_color: ""
 tags: []
@@ -20,3 +20,9 @@ image:
 5. Create or log in to Amazon AWS
 6. Create a new bucket for your bundler cache
 7. Generate a new security key in your console
+
+## The Terminal Portion
+
+Run `travis login --auto` in terminal.
+
+Run `travis encrypt AWS_ACCESS_KEY_ID="key-here" AWS_SECRET_ACCESS_KEY="key-here" --add`. Replace `key-here` with your keys.

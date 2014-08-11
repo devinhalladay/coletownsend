@@ -1,8 +1,10 @@
 
 *.scssc
 
-portfolio.sublime-workspace
+*.sublime-workspace
 
 *.sublime-workspace
 
 .DS_Store
+
+node_modules/*
