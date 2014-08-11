@@ -17,8 +17,8 @@
 
 
 &lt;figure class=&quot;grid-4&quot; &gt;
-  &lt;figcaption&gt;The Menu&lt;/figcaption&gt;
-  &lt;a role=&quot;fluidbox&quot; class=&quot;&quot; href=&quot;http://twnsnd.co/images/inline/thenews-menu.png&quot; title=&quot;TheNews App Menu&quot;&gt;&lt;img src=&quot;http://twnsnd.co/images/inline/thenews-menu.png&quot; alt=&quot;TheNews App Menu&quot; title=&quot;TheNews App Menu&quot;&gt;&lt;/a&gt;
+  &lt;figcaption&gt;Product Hunt View&lt;/figcaption&gt;
+  &lt;a role=&quot;fluidbox&quot; class=&quot;&quot; href=&quot;http://twnsnd.co/images/inline/thenews-ph.png&quot; title=&quot;Product Hunt View&quot;&gt;&lt;img src=&quot;http://twnsnd.co/images/inline/thenews-ph.png&quot; alt=&quot;Product Hunt View&quot; title=&quot;Product Hunt View&quot;&gt;&lt;/a&gt;
   
 &lt;/figure&gt;
 
@@ -26,14 +26,14 @@
 
 &lt;figure class=&quot;grid-4&quot; &gt;
   &lt;figcaption&gt;&lt;span class=&quot;caps&quot;&gt;MOTD&lt;/span&gt;&lt;/figcaption&gt;
-  &lt;a role=&quot;fluidbox&quot; class=&quot;&quot; href=&quot;http://twnsnd.co/images/inline/thenews-hacker.png&quot; title=&quot;Message of the Day&quot;&gt;&lt;img src=&quot;http://twnsnd.co/images/inline/thenews-hacker.png&quot; alt=&quot;Message of the Day&quot; title=&quot;Message of the Day&quot;&gt;&lt;/a&gt;
+  &lt;a role=&quot;fluidbox&quot; class=&quot;&quot; href=&quot;http://twnsnd.co/images/inline/thenews-motd.png&quot; title=&quot;Message of the Day&quot;&gt;&lt;img src=&quot;http://twnsnd.co/images/inline/thenews-motd.png&quot; alt=&quot;Message of the Day&quot; title=&quot;Message of the Day&quot;&gt;&lt;/a&gt;
   
 &lt;/figure&gt;
 
 
 &lt;figure class=&quot;grid-4&quot; &gt;
   &lt;figcaption&gt;Hacker News&lt;/figcaption&gt;
-  &lt;a role=&quot;fluidbox&quot; class=&quot;&quot; href=&quot;http://twnsnd.co/images/inline/thenews-hacker.png&quot; title=&quot;TheNews Hacker View&quot;&gt;&lt;img src=&quot;http://twnsnd.co/images/inline/thenews-hacker.png&quot; alt=&quot;TheNews Hacker View&quot; title=&quot;TheNews Hacker View&quot;&gt;&lt;/a&gt;
+  &lt;a role=&quot;fluidbox&quot; class=&quot;&quot; href=&quot;http://twnsnd.co/images/inline/thenews-hacker.png&quot; title=&quot;Hacker News View&quot;&gt;&lt;img src=&quot;http://twnsnd.co/images/inline/thenews-hacker.png&quot; alt=&quot;Hacker News View&quot; title=&quot;Hacker News View&quot;&gt;&lt;/a&gt;
   
 &lt;/figure&gt;
 
