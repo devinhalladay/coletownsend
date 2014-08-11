@@ -16,6 +16,14 @@ before_install:
 - gem install nokogiri -- --use-system-libraries
 - gem install bundle_cache
 - bundle_cache_install
+before_script:
+- echo -e "Host 69.89.16.246\n\tStrictHostKeyChecking no\n" >> ~/.ssh/config
+- chmod 600 coletowndend_rsa
+- ssh-add coletowndend_rsa
+script:
+- git config --global user.email "cole@coletownsend.com"
+- git config --global user.name "Cole Townsend"
+- bundle exec rake deploy
 after_script:
 - bundle_cache
 env:
