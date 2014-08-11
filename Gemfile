@@ -15,3 +15,4 @@ gem 'nokogiri'
 gem 'fileutils'
 
 gem 'typogruby'
+gem 'rdiscount'
