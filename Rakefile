@@ -151,7 +151,7 @@ task :deploy => [:generate] do
     pwd = Dir.pwd
     Dir.chdir tmp
 
-    system "scp -r * cole@69.89.16.246:/beta-site"
+    system "scp -r * devin@69.89.16.246:"
     message = "Site updated at #{Time.now.utc}"
 
     Dir.chdir pwd
