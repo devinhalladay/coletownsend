@@ -22,8 +22,6 @@ before_script:
 - chmod 600 coletownsend_rsa
 - ssh-add coletownsend_rsa
 script:
-- git config --global user.email "cole@coletownsend.com"
-- git config --global user.name "Cole Townsend"
 - bundle exec rake deploy
 after_script:
 - bundle_cache
