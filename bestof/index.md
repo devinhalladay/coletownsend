@@ -32,3 +32,5 @@ Buffalo is the second largest city in New York State. It has its own subway. It 
 * Duff's, home of the best
 * Wild Wings, go there if you hate wings but like trivia
 * Bob and Johns, solid wings and pizza
+
+<br>
