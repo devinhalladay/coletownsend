@@ -6,7 +6,7 @@ rvm:
 branches:
   only:
   - master
-bundler_args: --without development --path=~/.bundle
+bundler_args: "--without development --path=~/.bundle"
 before_install:
 - 'echo ''gem: --no-ri --no-rdoc'' > ~/.gemrc'
 - gem install bundler
@@ -22,6 +22,8 @@ before_script:
 - chmod 600 coletownsend_rsa
 - ssh-add coletownsend_rsa
 script:
+- git config --global user.email "cole@coletownsend.com"
+- git config --global user.name "Cole Townsend"
 - bundle exec rake deploy
 after_script:
 - bundle_cache
@@ -30,4 +32,3 @@ env:
   - BUNDLE_ARCHIVE="bundle-archive"
   - AWS_S3_BUCKET="coletownsend-bundler-cache"
   - secure: bQKML3wZj5Nau261zxRzYdLZhZ+YT8LVYrIWF1VGk2xEe+84g29Eufb2LNUDErIVcsJ2p5Tc5ipOiPnRfDyitd+Ca4o8X+K8OWh3BHG6Fq+Y7uvMmqaaIiiMLhjOtBqXTJxhJtEr6fo6fvVMjs5nnOvRCJZvjp7Idopl2ZISyWM=
-  - secure: egXy9onIifS2ojpmW3jnIdR4mdzoaeOMKc6wLqBy7OB9I/oflR33AK5miemtinL8o/KEDl3pmpXM3RqF1VqvIGgrsWlTpWBz+iLm+1aaAza6F/L86HzG0qMOkBvtH9zuBHjb9CEAZP2wPN8Uz3pvcLfh5qLlwjYoCyQCrngN040=
